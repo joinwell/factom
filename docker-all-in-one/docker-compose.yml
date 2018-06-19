@@ -1,0 +1,16 @@
+version: '3.2'
+services:
+  blocksoft_factomd:
+    image: blocksoft/factom-all
+    container_name: factom-all
+    volumes:
+     - factom_m2:/root/.factom/m2
+    ports:
+     - "8090:8090"
+     - "8088:8088"
+     - "8089:8089"
+     - "8108:8108"
+     - "8109:8109"
+     - "8110:8110"
+volumes:
+  factom_m2:

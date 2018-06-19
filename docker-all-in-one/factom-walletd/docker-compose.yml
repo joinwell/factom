@@ -1,0 +1,8 @@
+version: '3.2'
+services:
+  blocksoft_factom_walletd:
+    build: .
+    image: blocksoft/factomdwalletd
+    container_name: walletd
+    ports:
+     - "8089:8089"
